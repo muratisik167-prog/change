@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Döviz Çevirici Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="currency-card">
+        <header>
+            <h1>Döviz Çevirici</h1>
+            <p>Canlı Piyasa Kurları</p>
+        </header>
+
+        <form>
+            <div class="amount">
+                <p>Miktar</p>
+                <input type="number" value="1" id="amountInput">
+            </div>
+
+            <div class="currency-wrapper">
+                <div class="from">
+                    <p>Buradan</p>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="flag" id="fromFlag">
+                        <select id="fromCurrency">
+                            </select>
+                    </div>
+                </div>
+
+                <div class="icon">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+
+                <div class="to">
+                    <p>Buraya</p>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/TR/flat/64.png" alt="flag" id="toFlag">
+                        <select id="toCurrency">
+                            </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exchange-rate">1 USD = <span id="exchangeRateTxt">...</span> TRY</div>
+            <button type="button" id="getBtn">Çevir</button>
+        </form>
+    </div>
+
+    <script src="country-list.js"></script> <script src="script.js"></script>
+</body>
+</html>
