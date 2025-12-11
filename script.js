@@ -1,5 +1,5 @@
 // --- DİKKAT: API ANAHTARINI BURADAKİ TIRNAKLARIN İÇİNE YAZ ---
-const apiKey = "BURAYA_API_KEY_YAPISTIR"; 
+const apiKey = "20b5f63797f4ff423d609309"; 
 // Örnek görünüm: const apiKey = "a6c5d9f8e7b4c2a1d3e5f6g7";
 
 const dropList = document.querySelectorAll("form select");
